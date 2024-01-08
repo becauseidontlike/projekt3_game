@@ -49,7 +49,7 @@ btnRoll.addEventListener('click', function () {
       document.getElementById(`current--${activePlayer}`).textContent =
         currentScore;
 
-      current0.textContent = currentScore;
+      //current0.textContent = currentScore;
     } else {
       switchPlayer();
     }
@@ -61,6 +61,7 @@ btnHold.addEventListener('click', function () {
     finalScores[activePlayer] += currentScore;
     document.getElementById(`score--${activePlayer}`).textContent =
       finalScores[activePlayer];
+    //document.querySelector('#current-score').textContent = 0;
 
     if (finalScores[activePlayer] >= 100) {
       playing = false;
